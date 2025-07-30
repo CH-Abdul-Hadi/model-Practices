@@ -1,5 +1,10 @@
 import mongoose from 'mongoose';
 
-const CatogarieSchema = new mongoose.Schema({}, { timestamps: true });
+const CatogarySchema = new mongoose.Schema({
+    name:{
+        type: String,
+        require:true,
+    }
+}, { timestamps: true });
 
-export const Catogaries = mongoose.modele('Catogaries', CatogarieSchema);
+export const Catogary = mongoose.modele('Catogary', CatogarySchema);
